@@ -19,7 +19,7 @@ body{
 	font-weight: 300;
 	font-size: 15px;
 	/* line-height: 1.7; */
-	color: #ffffff;
+	color: var(--base-color);
 	background-color: var(--primary-color2);
 	overflow-x: hidden;
 	-webkit-transition: all 300ms linear;
