@@ -48,7 +48,7 @@ const activateSlide = ($slide) => {
     const $slides = $q(".carousel__item");
     $slides.forEach(el => el.removeAttribute('data-active'));
     $slide.setAttribute( 'data-active', true );
-    $slide.focus();
+    // $slide.focus();
 }
 
 const autoSlide = () => {

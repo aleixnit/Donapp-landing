@@ -8,7 +8,7 @@
     --primary-color: #22577A;
     --second-primary: #38A3A5;
     --secondary-color: #57CC99;
-    --second-secondary: #80ED99;
+    --second-secondary: rgb(128, 237, 153);
     --base-color: #C7F9CC;
     --height: calc( 80vh - 50px );
     --width: 450px;
@@ -402,13 +402,15 @@ body.nav-active .nav__list-item:nth-child(10) {
     top: 0;
     left: 0;
     width: 100%;
-    height: 125%;
-    object-fit: cover;
+    height: 100%;
+    object-fit: contain;
   }
 
 /* ------------------------------ ABOUT PROJECT ---------------------------------------------------------------------------------- */
+
+
 .about_project {
-  height: 100vh;
+  height: auto;
   background-color: var(--primary-color);
   margin-bottom: 3rem;
   display: flex;
@@ -418,12 +420,22 @@ body.nav-active .nav__list-item:nth-child(10) {
 }
 
 .about_content {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
-  background-color: #000;
-  height: 90vh;
-  border: 1px solid red;
+  padding:0rem 3rem;
+  height: auto;
   color: white;
+  /* border: 1px solid red; */
+}
+
+.about_flex {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.about_flex p {
+  font-size: 0.5rem;
+  padding: 1rem;
 }
 
 
@@ -596,7 +608,7 @@ body.nav-active .nav__list-item:nth-child(10) {
     height: 100%;
     z-index: 1;
     opacity: 1;
-    background: linear-gradient(160deg, rgba(2,0,36,0) 40%, rgba(118,221,136,.5) 70%, rgba(0,255,246,.6) 100%);
+    background: linear-gradient(160deg, rgba(0, 0, 0, 0) 40%, rgba(118, 163, 221, 0.5) 70%, rgba(98, 250, 162, 0.656) 100%);
     transition: all .66s cubic-bezier(.55,.24,.18,1);
 }
 
@@ -625,6 +637,10 @@ body.nav-active .nav__list-item:nth-child(10) {
     left: 0;
 }
 
+.iconos-git-link {
+  font-size: 3rem!important;
+}
+
 .carousel__contents .user__name {
     color: #e8eff4;
     font-size: 1.75em;
@@ -635,13 +651,13 @@ body.nav-active .nav__list-item:nth-child(10) {
 
 .carousel__contents .user__title {
     /* font-family: lexend; */
-    font-size: .975em;
+    font-size: 1.175em;
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
     letter-spacing: 1.25px;
     font-weight: 700;
     text-transform: uppercase;
     color: transparent;
-    background: linear-gradient( 270deg, rgb(67, 255, 0), rgb(0, 255, 247) );
+    background: linear-gradient( 270deg, rgb(67, 255, 0), var(--base-color) );
     background-clip: text;
     -webkit-background-clip: text;
     opacity: 0.85;
