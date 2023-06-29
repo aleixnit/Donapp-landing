@@ -206,7 +206,7 @@ header.cd-header {
 .nav__list-item a{ 
 	position: relative;
 	text-decoration: none;
-	color: white;
+	color: var(--base-color);
 	overflow: hidden; 
 	cursor: pointer;
 	padding-left: 5px;
@@ -234,17 +234,17 @@ header.cd-header {
 }
 .nav__list-item a:hover:after{ 
 	height: 4px;
-	opacity: 1;
+	opacity: 0;
 	left: 0;
 	width: 100%;
 }
 .nav__list-item a:hover{
-	background-image: linear-gradient(to right, #ff0000, #0000ff);
+	background-image: linear-gradient(to right, var(--second-primary), var(--second-secondary));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .nav__list-item.active-nav a{
-	color: rgba(255,255,255,1);
+	color: rgb(255, 255, 255);
 }
 .nav__list-item.active-nav a:after{ 
 	height: 4px;
