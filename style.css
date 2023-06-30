@@ -485,6 +485,12 @@ body.nav-active .nav__list-item:nth-child(10) {
 
 
 /* -------------------------------- TEAM PAGE ------------------------------- */
+.box_carousel_title {
+font-size: 4rem;
+font-weight: 900;
+color:var(--second-secondary);
+text-decoration: underline;
+}
 .carousel {
     display: grid;
     transform: translate3d(0,0,0.1px);
@@ -672,9 +678,9 @@ body.nav-active .nav__list-item:nth-child(10) {
     flex-direction: column-reverse;
     justify-content: start;
     min-height: 200px;
-    padding: 1em;
+    padding: 2em;
     z-index: 2;
-    background-image: radial-gradient( ellipse at 0px 0px, rgba(0,0,0,0.4) 20%, transparent 50% );
+    background-image: radial-gradient( ellipse at 0px 0px, rgba(18, 68, 99, 0.4) 20%, transparent 50% );
     background-size: 170% 200px;
     background-repeat: no-repeat;
     position: absolute;
@@ -702,10 +708,10 @@ body.nav-active .nav__list-item:nth-child(10) {
     font-weight: 700;
     text-transform: uppercase;
     color: transparent;
-    background: linear-gradient( 270deg, rgb(67, 255, 0), var(--base-color) );
+    background: linear-gradient( 270deg, var(--second-secondary), var(--second-primary) );
     background-clip: text;
     -webkit-background-clip: text;
-    opacity: 0.85;
+    opacity: 1;
     text-wrap: balance;
     margin-bottom: 0.5em;
 }
