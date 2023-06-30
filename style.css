@@ -1175,7 +1175,8 @@ body, html {
 }
 
 .full-height {
-  height: 45vh;
+  height: auto;
+  min-height: 35vh;
 }
 
 .section.full-height video {
