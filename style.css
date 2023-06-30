@@ -1173,4 +1173,12 @@ body, html {
   text-align: center;
   margin-bottom: 2rem;
 }
+
+.full-height {
+  height: 45vh;
+}
+
+.section.full-height video {
+  bottom: -28px!important;
+}
 }
