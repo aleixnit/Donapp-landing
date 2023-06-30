@@ -31,6 +31,9 @@ a {
 
 /* #Primary style
 ================================================== */
+.section.full-height video {
+  bottom: -85px!important;
+}
 
 .section {
     position: relative;
