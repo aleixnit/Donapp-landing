@@ -446,6 +446,9 @@ body.nav-active .nav__list-item:nth-child(10) {
   padding:0rem 3rem;
   padding-left: 7rem;
   color: #092537;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .about_content1 p {
@@ -459,7 +462,15 @@ body.nav-active .nav__list-item:nth-child(10) {
   color: #092537;
   padding:1rem 0rem;
   margin-right: 7rem;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-direction: row-reverse;
+}
 
+.about_content2 div {
+  margin-right: 9rem;
 }
 
 .about_content2 p {
@@ -471,25 +482,35 @@ body.nav-active .nav__list-item:nth-child(10) {
   width: 100vw;
   padding:0rem 3rem;
   padding-left: 7rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
+.about_content3 div {
+  margin-right: 9rem;
 }
 
 .about_content4 {
   padding:1rem 3rem;
   margin-right: 7rem;
-
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-direction:row-reverse;
 }
 
-
-
-
+.about_content4 div {
+  text-align: right;
+}
 
 /* -------------------------------- TEAM PAGE ------------------------------- */
 .box_carousel_title {
 font-size: 4rem;
 font-weight: 900;
-color:var(--second-secondary);
 text-decoration: underline;
+color: var(--second-secondary)
+
 }
 .carousel {
     display: grid;
@@ -957,4 +978,95 @@ body, html {
   h1 {
     font-size:24px;
   }
+}
+
+
+/* ------------------------------ MEDIA QUERYS ------------------------------ */
+@media (max-width: 600px) {
+  .about_project {
+    height: auto;
+    background-color: var(--primary-color);
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+  }
+
+  .about_content {
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    color: white;
+  }
+
+  .about_content1{
+    background-color: var(--second-secondary);
+    width: 100%;
+    padding:1rem 0rem;
+    padding-left: 0rem;
+    color: #092537;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .about_content1 p {
+    color:#092537;
+  }
+  
+  .about_content2 {
+    background-color: #57CC99;
+    width: 100vw;
+    /* padding:0rem 3rem; */
+    color: #092537;
+    padding:1rem 0rem;
+    margin-right: 0rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    flex-direction: column;
+  }
+  
+  .about_content2 p {
+    color: #092537;
+  }
+
+  .about_content2 div {
+    margin-right: 0rem;
+  }
+  
+  .about_content3 {
+    background-color: var(--second-primary);
+    width: 100vw;
+    padding:1rem 0rem;
+    /* padding-left: 1rem; */
+    /* padding-right: 1rem; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0px;
+  }
+  
+  .about_content3 div {
+    margin-right: 0rem;
+  }
+
+  .about_content4 {
+    padding:1rem 0rem;
+    margin-right: 0rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction:column;
+  }
+  
+  .about_content4 div {
+    text-align: center;
+  }
+  
 }
